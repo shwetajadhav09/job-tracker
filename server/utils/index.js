@@ -7,7 +7,7 @@ const generateToken = (payload) => {
   // Generate the access token with a 1-hour expiration time
 
   const accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: "1h",
+    expiresIn: "1y",
   });
 
   // Generate the refresh token with a 1-year expiration time
